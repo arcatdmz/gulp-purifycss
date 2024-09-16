@@ -18,7 +18,7 @@ module.exports = function(source, options) {
     if (file.isBuffer()) {
       try {
         purify(sourceFiles, file.contents.toString(), options, function(output){
-          file.contents = new Buffer(output);
+          file.contents = Buffer.from(output);
           cb(null, file);
         });
       } catch(error) {
@@ -35,7 +35,7 @@ module.exports = function(source, options) {
       file.on('end',function(){
         try {
           purify(sourceFiles, css, options, function(output){
-            file.contents = new Buffer(output);
+            file.contents = Buffer.from(output);
             cb(null, file);
           });
         } catch(error) {
