@@ -24,6 +24,6 @@
   "dependencies": {
     "glob": "^5.0.10",
     "purify-css": "^1.2.5",
-    "through2": "^2.0.0"
+    "through2": "^4.0.2"
   }
 }
