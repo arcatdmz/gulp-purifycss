@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/purifycss/gulp-purifycss",
   "dependencies": {
-    "glob": "^5.0.10",
+    "glob": "^11.0.0",
     "purify-css": "^1.2.5",
     "through2": "^4.0.2"
   }
